@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{   
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+html{
+    font-size: 67%;
+}
+body{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.main{
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 2rem; */
+    height: 100vh;
+}
+.text-part{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.heading1{
+    text-align: center;
+    font-weight: 300;
+    color: var(--very-dark-blue);
+}
+.heading2{
+    text-align: center;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+.para{
+    text-align: center;
+    /* padding: 0 6rem; */
+    color: var(--grayish-blue);
+    margin-top: 1.5rem;
+}
+.card1{
+    height: 200px;
+    width: 250px;
+    border-top: 0.5rem solid var(--cyan);
+    border-radius: 0.8rem;
+    background-color: var(--very-light-gray);
+    padding: 1.5rem;
+    position: relative;
+}
+.card2{
+    height: 200px;
+    width: 250px;
+    border-top: 0.5rem solid var(--red);
+    border-radius: 0.8rem;
+    background-color: var(--very-light-gray);
+    padding: 1.5rem;
+    position: relative;
+}
+.card3{
+    height: 200px;
+    width: 250px;
+    border-top: 0.5rem solid var(--orange);
+    border-radius: 0.8rem;
+    background-color: var(--very-light-gray);
+    padding: 1.5rem;
+    position: relative;
+}
+.card4{
+    height: 200px;
+    width: 250px;
+    border-top: 0.5rem solid var(--blue);
+    border-radius: 0.8rem;
+    background-color: var(--very-light-gray);
+    padding: 1.5rem;
+    position: relative;
+}
+.card-heading{
+    margin-bottom: 0.5rem;
+    color: var(--very-dark-blue);
+}
+.card-img{
+    width: 6rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+   padding-bottom: 2rem;
+   padding-right: 2rem;
+}
+.card-para{
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--grayish-blue);
+}
+.box-part{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-around;
+    
+}
+.line2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+
+
+
+
+.attribution { font-size: 1.1rem; text-align: center; margin-top: 1rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width:375px){
+    .text-part{
+        padding: 5rem;
+    }
+    .heading1, .heading2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .para{
+        font-size: 1.3rem;
+    }
+    .box-part{
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+    .attribution{
+        display: none;
+    }
+    .line2{
+        gap: 2rem;
+    }
+}
